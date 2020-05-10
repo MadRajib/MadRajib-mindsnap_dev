@@ -3,6 +3,9 @@
 title: CSS stylesheet
 
 ---
+
+strong { font-weight: bold; }
+
 /* nav bar brand */
 .navbar-brand{
     font-family: 'Montserrat-Regular';

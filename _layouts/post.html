@@ -24,8 +24,8 @@
                     <!-- Grid column -->
                     <div class="col mb-4">
 
-                        <h3 class="h3-responsive mb-2">{% contentblock title no-convert %}</h3>
-                        <p class="dark-grey-text">{% contentblock summary no-convert %}</p>
+                        <h3 class="h3-responsive mb-2">{{ page.title }}</h3>
+                        <p class="dark-grey-text">{{page.summary}}</p>
                         
                             <div class="row mt-2">
                               <div class="col">
@@ -47,8 +47,7 @@
 
                         <div class="card my-1 mb-4">
                             <div class="thumbnail text-center">
-                                <img src="https://www.jagranjosh.com/imported/images/E/GK/delhi-lockdown-relaxed-heres-list-of-whats-allowed-and-whats-not-in-national-capital-Body_Images.webp"
-                                class="img-fluid" alt="">
+                                <img src="{{page.image}}" class="img-fluid" alt="">
                             </div>
                             
                         </div>
