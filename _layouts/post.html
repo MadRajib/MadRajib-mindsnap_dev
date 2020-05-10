@@ -1,0 +1,90 @@
+{% include head.html  %}
+
+{% include md_navbar.html %}
+
+<div class="container-fluid">
+
+
+    <div class="row mt-2">
+
+        <!-- container to holding information -->
+        <div class="col-md-8 mb-4">
+            <div class="card-header font-weight-bold text-capitalize">
+                Current Affairs
+            </div>
+
+            <!-- current affairs goes here -->
+
+
+            <div class="container">
+
+                <!-- Grid row -->
+                <div class="row mt-5">
+
+                    <!-- Grid column -->
+                    <div class="col mb-4">
+
+                        <h3 class="h3-responsive mb-2">{% contentblock title no-convert %}</h3>
+                        <p class="dark-grey-text">{% contentblock summary no-convert %}</p>
+                        
+                            <div class="row mt-2">
+                              <div class="col">
+                                <i class="far fa-clock"></i>
+                                <span class="date-article">May 4, 2020 13:52 IST</span>
+                              </div>
+                              <div class="col">
+                                <ul class=" list-inline text-right">
+                                    <li class="list-inline-item"><a><i
+                                                class="fab fa-facebook-f fa-lg px-1 text-primary"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i
+                                                class="fab fa-twitter fa-lg px-1 text-info"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i
+                                                class="far fa-envelope fa-lg px-1 text-default"></i></a>
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                        <div class="card my-1 mb-4">
+                            <div class="thumbnail text-center">
+                                <img src="https://www.jagranjosh.com/imported/images/E/GK/delhi-lockdown-relaxed-heres-list-of-whats-allowed-and-whats-not-in-national-capital-Body_Images.webp"
+                                class="img-fluid" alt="">
+                            </div>
+                            
+                        </div>
+
+                        <p class="text-justify">{{content}}</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            {% contentblock sidebar %}
+            <!-- current affairs end -->
+
+
+        </div>
+
+        <!-- this col will hold all the jobs -->
+        <div class="col-md-4 mb-4">
+            <div class="card-header font-weight-bold text-capitalize">Job Offers</div>
+
+            {% include carousel.html %}
+
+            <!-- Jobs info goes here -->
+            {% include job_cards.html %}
+
+
+            {% include video_cards.html %}
+            <!-- jobs info end -->
+
+
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
+
+{% include footer-scripts.html %}

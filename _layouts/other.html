@@ -1,0 +1,43 @@
+{% include head.html  %}
+
+{% include md_navbar.html %}
+
+<div class="container-fluid">
+
+
+    <div class="row mt-2">
+
+        <!-- container to holding information -->
+        <div class="col-md-8 mb-4">
+            <div class="card-header font-weight-bold text-capitalize">
+                Current Affairs
+            </div>
+
+            <!-- current affairs goes here -->
+            {{content}}
+            <!-- current affairs end -->
+
+
+        </div>
+
+        <!-- this col will hold all the jobs -->
+        <div class="col-md-4 mb-4">
+            <div class="card-header font-weight-bold text-capitalize">Job Offers</div>
+
+            {% include carousel.html %}
+
+            <!-- Jobs info goes here -->
+            {% include job_cards.html %}
+
+
+            {% include video_cards.html %}
+            <!-- jobs info end -->
+
+
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
+
+{% include footer-scripts.html %}

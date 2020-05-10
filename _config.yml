@@ -1,0 +1,46 @@
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: "mindsnap_dev" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+highlighter: rouge
+markdown: kramdown
+
+
+kramdown:  
+  parse_block_html: true
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-contentblocks
+
+pagination:
+  enabled: true
+  per_page: 12
+  sort_reverse: true
+  sort_field: 'date'
+  title: ':title'
+  trail:
+    before: 2
+    after: 2
+
+navigation:
+- text: Home
+  url: /
+- text: Current Affairs
+  url: /ca.html
+- text: General Knowledge
+  url: /gk/
+- text: Technology
+  url: /tech.html
+- text: History
+  url: /histy.html
