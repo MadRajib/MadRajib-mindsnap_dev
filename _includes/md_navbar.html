@@ -1,3 +1,6 @@
+---
+    name: hello
+---
 <nav class="navbar navbar-expand-lg navbar-dark indigo">
 
     <!-- brand name -->
@@ -21,7 +24,7 @@
                     {% assign current = 'active' %}
                 {% endif %}
                 <li class="nav-item {{ current }}">
-                    <a class="nav-link text-capitalize" href="{{ link.url }}">{{ link.text }}</a>
+                    <a class="nav-link text-capitalize" href="{{ site.baseurl|append: link.url }}">{{ link.text }}</a>
                 </li>
             {% endfor %}
         </ul>
