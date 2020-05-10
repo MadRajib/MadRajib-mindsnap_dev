@@ -34,12 +34,12 @@ pagination:
 
 navigation:
 - text: Home
-  url: /
+  url: baseurl/
 - text: Current Affairs
-  url: /ca.html
+  url: baseurl/ca.html
 - text: General Knowledge
-  url: /gk/
+  url: baseurl/gk/
 - text: Technology
-  url: /tech.html
+  url: baseurl/tech.html
 - text: History
-  url: /histy.html
+  url: baseurl/histy.html
