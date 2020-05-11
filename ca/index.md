@@ -3,8 +3,8 @@ layout: other
 pagination: 
   enabled: true
 ---
-
-{% for post in paginator.posts %}
+{% assign sorted-posts = paginator.posts | where: "categories","Current-Affairs" %}
+{% for post in sorted-posts limit: 10 %}
 <div class="card">
   <div class="card-body">
     <h5 class="card-title"><a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a></h5>
