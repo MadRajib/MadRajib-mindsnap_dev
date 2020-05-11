@@ -1,24 +1,34 @@
 ---
+title : History
 layout: other
+pdf_folder: "histy-pdf"
 pagination: 
   enabled: true
+  category: "History"
 ---
-{% assign sorted-posts = paginator.posts | where: "categories","History" %}
-{% for post in sorted-posts limit: 10 %}
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title"><a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a></h5>
-    <p class="card-text">
-      {{ post.summary}}
-    </p>
-      <div class="td-post-date two">
-        <i class="far fa-clock"></i>
-              {{post.date|date_to_string}}
-        <a href="#">
-          <i class="far fa-comment-alt"></i>
-            0
-        </a>
-      </div>
+<div class="container">
+  <ul class="nav nav-tabs nav-pills">
+    <li>
+      <a class="nav-link active" data-toggle="tab" href="#feed">Feeds</a>
+    </li>
+    <li>
+      <a class="nav-link" data-toggle="tab" href="#quiz">Quizes</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="feed" class="tab-pane active">
+
+      <!-- Feed cards and paginator include -->
+
+      {% include feed-cards-paginator.html%}
+
+    </div>
+    <div id="quiz" class="tab-pane fade">
+
+      <!-- Quiz cards include -->
+      {% include quiz-cards.html %}
+
+    </div>
   </div>
 </div>
-{% endfor %}

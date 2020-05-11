@@ -1,54 +1,34 @@
 ---
+title : General Knowledge
 layout: other
+pdf_folder: "gk-pdf"
 pagination: 
   enabled: true
   category: "General-Knowledge"
 ---
-{% for post in paginator.posts %}
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title"><a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a></h5>
-    <p class="card-text">
-      {{ post.summary}}
-    </p>
-      <div class="td-post-date two">
-        <i class="far fa-clock"></i>
-              {{post.date|date_to_string}}
-        <a href="#">
-          <i class="far fa-comment-alt"></i>
-            0
-        </a>
-      </div>
+<div class="container">
+  <ul class="nav nav-tabs nav-pills">
+    <li>
+      <a class="nav-link active" data-toggle="tab" href="#feed">Feeds</a>
+    </li>
+    <li>
+      <a class="nav-link" data-toggle="tab" href="#quiz">Quizes</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="feed" class="tab-pane active">
+
+      <!-- Feed cards and paginator include -->
+
+      {% include feed-cards-paginator.html%}
+
+    </div>
+    <div id="quiz" class="tab-pane fade">
+
+      <!-- Quiz cards include -->
+      {% include quiz-cards.html %}
+
+    </div>
   </div>
-</div>
-{% endfor %}
-
-
-<div class="container mt-4">
-{% if paginator.total_pages > 1 %}
-  <nav aria-label="Page navigation ">
-    <ul class="pagination justify-content-center">
-       {% assign hasPrev = nil %}
-       {% if paginator.previous_page %}
-          
-       {% else %}
-          {%assign hasPrev = 'disabled' %}
-       {% endif %}
-       <li class="page-item {{hasPrev}}">
-          <a class=" page-link btn btn-info" href="{{ paginator.previous_page_path | relative_url }}" tabindex="-1">prev</a>
-      </li>
-
-      {% assign hasNext = nil %}
-      {% if paginator.next_page %}
-          
-      {% else %}
-          {%assign hasNext = 'disabled' %}
-      {% endif %}
-      <li class="page-item {{hasNext}}">
-        <a class="page-link btn btn-info" href="{{ paginator.next_page_path | relative_url }}" tabindex="-1">next</a>
-      </li>
-    </ul>
-  </nav>
-
-{% endif %}
 </div>
