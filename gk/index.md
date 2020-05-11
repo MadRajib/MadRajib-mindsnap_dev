@@ -2,7 +2,7 @@
 layout: other
 pagination: 
   enabled: true
-  category: "Current-Affairs"
+  category: "General-Knowledge"
 ---
 {% for post in paginator.posts %}
 <div class="card">
@@ -13,7 +13,7 @@ pagination:
     </p>
       <div class="td-post-date two">
         <i class="far fa-clock"></i>
-              {{post.date}}
+              {{post.date|date_to_string}}
         <a href="#">
           <i class="far fa-comment-alt"></i>
             0
