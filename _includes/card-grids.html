@@ -4,13 +4,10 @@
 <div class="row">
     {% for card in page.cards %}
     <div class="col mb-2">
-
         <div class="card h-100">
-            <div class="card-body text-center">
-                <h5 class="card-title h5-responsive text- ">{{ card.text }}</h5>
+            <h5 class="card-title h5-responsive text-left m-2">{{ card.text }}</h5>
 
-                <a href="{{site.baseurl|append: card.url}}" class="btn btn-primary">View</a>
-            </div>
+            <a href="{{site.baseurl|append: card.url}}" class="btn btn-primary">View</a>
         </div>
     </div>
     {% endfor %}
