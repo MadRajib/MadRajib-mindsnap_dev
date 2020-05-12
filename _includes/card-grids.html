@@ -1,5 +1,21 @@
-<div class="card-header font-weight-bold text-capitalize">
-    Top 10 Current Affairs
+<div class="card-header font-weight-bold">
+    What are you up to ?
+</div>
+<div class="row">
+    {% for card in page.cards %}
+    <div class="col mb-2">
+
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title h5-responsive text-center ">{{ card.text }}</h5>
+            </div>
+            <div class="card-body text-center">
+
+                <a href="{{site.baseurl|append: card.url}}" class="btn btn-primary">View</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 
 <div class="card-header font-weight-bold text-capitalize">
