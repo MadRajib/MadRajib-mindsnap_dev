@@ -3,16 +3,17 @@
 <div class="card">
     <div class="card-body">
         <h5 class="card-title">
+            <img src="{{site.baseurl| append: 'assets/img/'}}download.svg" alt="{{card.text}}" height="20"
+                    width="auto" />
             <a href="{{ site.baseurl | append: myimage.path }}" target="blank">
                 {{page.title}} Quiz: {{myimage.modified_time | date_to_string}}
             </a>
         </h5>
         <div class="td-post-date two">
-            <i class="far fa-clock"></i>
+            <img src="{{site.baseurl| append: 'assets/img/'}}time.svg" alt="{{card.text}}" height="20"
+                    width="auto" />
             {{myimage.modified_time | date_to_string}}
-            <a href="#">
-                <i class="far fa-comment-alt"></i>
-            </a>
+            
         </div>
     </div>
 </div>

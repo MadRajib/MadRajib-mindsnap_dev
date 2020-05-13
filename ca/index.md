@@ -2,6 +2,7 @@
 title : Current Affairs
 layout: other
 pdf_folder: "ca-pdf"
+image: ca.svg
 pagination: 
   enabled: true
   category: "Current-Affairs"

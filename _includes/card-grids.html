@@ -1,26 +1,21 @@
-<div class="card-header font-weight-bold">
+<div class="card-header font-weight-bold mb-2">
     What are you up to ?
 </div>
 <div class="row">
     {% for card in page.cards %}
     <div class="col mb-2">
-        <div class="card h-100 ">
-            <h6 class=" h6-responsive text-center m-2 ">{{ card.text }}</h6>
-
-            <a href="{{site.baseurl|append: card.url}}" class="btn btn-primary">View</a>
+        <div class="card h-100 text-center">
+            <a class="m-2" href="{{site.baseurl|append: card.url}}">
+                <img src="{{site.baseurl| append: 'assets/img/'}}{{card.image}}" alt="{{card.text}}" height="80"
+                    width="auto" />
+            </a>
+            <div class=" card-footer">
+                <a href="{{site.baseurl|append: card.url}}">
+                    <h6 class=" h6-responsive ">{{ card.text }}</h6>
+                </a>
+            </div>
         </div>
     </div>
     {% endfor %}
 </div>
 
-<div class="card-header font-weight-bold text-capitalize">
-    Top 5 General Knowledge
-</div>
-
-<div class="card-header font-weight-bold text-capitalize">
-    Top 5 History
-</div>
-
-<div class="card-header font-weight-bold text-capitalize">
-    Top 6 Technical News
-</div>

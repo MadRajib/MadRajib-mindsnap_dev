@@ -819,7 +819,7 @@ nav a:focus {
     text-decoration: none;
     height: 79px;
     width: 30px;
-    background: transparent url("{{site.baseurl}}/images/arrows.png") no-repeat left top;
+    /* background: transparent url("{{site.baseurl}}/images/arrows.png") no-repeat left top; */
     margin-top: 3%;
     display: none;
 }
@@ -2074,7 +2074,7 @@ ul.bottom i {
     height: 22px;
     border: none;
     text-indent: 100%;
-    background: url({{site.baseurl}}/images/move-top.png) no-repeat 0px 0px;
+    background: url({{site.baseurl}}/assets/img/move-top.png) no-repeat 0px 0px;
 }
 
 /*--responsive--*/

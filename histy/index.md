@@ -2,6 +2,7 @@
 title : History
 layout: other
 pdf_folder: "histy-pdf"
+image: histy.svg
 pagination: 
   enabled: true
   category: "History"

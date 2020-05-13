@@ -1,0 +1,46 @@
+
+<div class="card-header font-weight-bold text-capitalize mt-4">
+    Top 10 Current Affairs
+</div>
+{% assign sorted-posts = site.posts | where: "categories","Current-Affairs" %}
+{% for post in sorted-posts limit: 5 %}
+<div class="card">
+  <div class="card-body">
+    <h6 class="card-title">
+      <img src="{{site.baseurl| append: 'assets/img/'}}item.svg" alt="{{card.text}}" height="20"
+                    width="auto" />
+      <a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a></h6>
+    <p class="card-text">
+      {{ post.summary}}
+    </p>
+      <div class="td-post-date two">
+        <img src="{{site.baseurl| append: 'assets/img/'}}time.svg" alt="{{card.text}}" height="20"
+                    width="auto" />
+          {{post.date|date_to_string}}
+      </div>
+  </div>
+</div>
+{% endfor %}
+
+<div class="card-header font-weight-bold text-capitalize mt-4">
+    Top 10 Technology news
+</div>
+{% assign sorted-posts = site.posts | where: "categories","Technology" %}
+{% for post in sorted-posts limit: 5 %}
+<div class="card">
+  <div class="card-body">
+    <h6 class="card-title">
+      <img src="{{site.baseurl| append: 'assets/img/'}}item.svg" alt="{{card.text}}" height="20"
+                    width="auto" />
+      <a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a></h6>
+    <p class="card-text">
+      {{ post.summary}}
+    </p>
+      <div class="td-post-date two">
+        <img src="{{site.baseurl| append: 'assets/img/'}}time.svg" alt="{{card.text}}" height="20"
+                    width="auto" />
+          {{post.date|date_to_string}}
+      </div>
+  </div>
+</div>
+{% endfor %}

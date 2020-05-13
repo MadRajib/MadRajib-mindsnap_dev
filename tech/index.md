@@ -2,6 +2,7 @@
 title : Technology
 layout: other
 pdf_folder: "tech-pdf"
+image: tech.svg
 pagination:
   enabled: true
   category: "Technology"

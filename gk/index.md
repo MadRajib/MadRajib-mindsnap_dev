@@ -2,6 +2,7 @@
 title : General Knowledge
 layout: other
 pdf_folder: "gk-pdf"
+image: gk.svg
 pagination: 
   enabled: true
   category: "General-Knowledge"
