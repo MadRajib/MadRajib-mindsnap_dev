@@ -47,7 +47,7 @@
 
                         <div class="card my-1 mb-4">
                             <div class="thumbnail text-center">
-                                <img src="{{page.image}}" class="img-fluid" alt="">
+                                <img src="{{site.baseurl |append: 'assets/'| append:page.assets |append: '/images/' |append: page.image}}" class="img-fluid" alt="">
                             </div>
                             
                         </div>

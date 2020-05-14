@@ -1,7 +1,7 @@
 ---
 title : Current Affairs
 layout: other
-pdf_folder: "ca-pdf"
+assets: "ca-assets"
 image: ca.svg
 pagination: 
   enabled: true

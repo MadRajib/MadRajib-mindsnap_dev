@@ -15,25 +15,21 @@ github_username:  jekyll
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: "assets/ca-assets/pdf"
     values:
-      image: true
+      ca-assets: true
   - scope:
-      path: "assets/ca-pdf"
+      path: "assets/gk-assets/pdf"
     values:
-      ca-pdf: true
+      gk-assets: true
   - scope:
-      path: "assets/gk-pdf"
+      path: "assets/tech-assets/pdf"
     values:
-      gk-pdf: true
+      tech-assets: true
   - scope:
-      path: "assets/tech-pdf"
+      path: "assets/histy-assets/pdf"
     values:
-      tech-pdf: true
-  - scope:
-      path: "assets/histy-pdf"
-    values:
-      histy-pdf: true
+      histy-assets: true
 
 kramdown:
   syntax_highlighter: rouge

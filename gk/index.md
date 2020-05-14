@@ -1,7 +1,7 @@
 ---
 title : General Knowledge
 layout: other
-pdf_folder: "gk-pdf"
+assets: "gk-assets"
 image: gk.svg
 pagination: 
   enabled: true

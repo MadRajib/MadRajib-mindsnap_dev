@@ -1,7 +1,7 @@
 ---
 title : History
 layout: other
-pdf_folder: "histy-pdf"
+assets: "histy-assets"
 image: histy.svg
 pagination: 
   enabled: true

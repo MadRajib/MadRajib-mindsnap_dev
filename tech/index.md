@@ -1,7 +1,7 @@
 ---
 title : Technology
 layout: other
-pdf_folder: "tech-pdf"
+assets: "tech-assets"
 image: tech.svg
 pagination:
   enabled: true
